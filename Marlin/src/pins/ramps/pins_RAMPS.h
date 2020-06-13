@@ -212,7 +212,7 @@
 #define HEATER_0_PIN               RAMPS_D10_PIN
 
 #if ENABLED(IS_RAMPS_EFB)                         // Hotend, Fan, Bed
-  #define HEATER_BED_PIN            RAMPS_D8_PIN
+  #define HEATER_BED_PIN            SERVO1_PIN    //RAMPS_D8_PIN
 #elif ENABLED(IS_RAMPS_EEF)                       // Hotend, Hotend, Fan
   #define HEATER_1_PIN              RAMPS_D9_PIN
 #elif ENABLED(IS_RAMPS_EEB)                       // Hotend, Hotend, Bed
@@ -514,7 +514,7 @@
 
     #if ENABLED(REPRAP_DISCOUNT_SMART_CONTROLLER)
 
-      #define BEEPER_PIN                      37
+      //#define BEEPER_PIN                      37
 
       #if ENABLED(CR10_STOCKDISPLAY)
         #define BTN_EN1                       17
