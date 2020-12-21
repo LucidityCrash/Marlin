@@ -514,9 +514,13 @@
   //#define DEFAULT_Kp 14.14
   //#define DEFAULT_Ki 0.86
   //#define DEFAULT_Kd 58.19
+  //#define DEFAULT_Kp 14.89
+  //#define DEFAULT_Ki 0.92
+  //#define DEFAULT_Kd 60.39
+
   #define DEFAULT_Kp 14.89
-  #define DEFAULT_Ki 0.92
-  #define DEFAULT_Kd 60.39
+  #define DEFAULT_Ki 0.82
+  #define DEFAULT_Kd 67.38
 
 #endif // PIDTEMP
 
@@ -779,7 +783,9 @@
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 500 }
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 759.902 }
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 928.40 }
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 837 }
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 837 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 863.78 } // 868.15 | 872.50
+
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1010,7 +1016,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { 28, 0, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { 28, 0, -1.35 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.

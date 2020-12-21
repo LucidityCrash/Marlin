@@ -182,7 +182,7 @@
    * and/or decrease WATCH_TEMP_INCREASE. WATCH_TEMP_INCREASE should not be set
    * below 2.
    */
-  #define WATCH_TEMP_PERIOD 20                // Seconds
+  #define WATCH_TEMP_PERIOD 30                // Seconds
   #define WATCH_TEMP_INCREASE 2               // Degrees Celsius
 #endif
 
@@ -1910,7 +1910,7 @@
   #define RETRACT_LENGTH_SWAP 13          // (mm) Default swap retract length (positive value)
   #define RETRACT_FEEDRATE 50             // (mm/s) Default feedrate for retracting
   #define RETRACT_ZRAISE 0                // (mm) Default retract Z-raise
-  #define RETRACT_RECOVER_LENGTH -0.05        // (mm) Default additional recover length (added to retract length on recover)
+  #define RETRACT_RECOVER_LENGTH -0.1        // (mm) Default additional recover length (added to retract length on recover)
   #define RETRACT_RECOVER_LENGTH_SWAP 0   // (mm) Default additional swap recover length (added to retract length on recover from toolchange)
   #define RETRACT_RECOVER_FEEDRATE 8      // (mm/s) Default feedrate for recovering from retraction
   #define RETRACT_RECOVER_FEEDRATE_SWAP 3 // (mm/s) Default feedrate for recovering from swap retraction
